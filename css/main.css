@@ -1,0 +1,505 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+*, *:before, *;after{
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+           box-sizing: border-box;
+}
+
+body{
+
+    background-color: white;
+    font-family: lato;
+}
+
+.container{
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 60px 0 86px;
+    background-color: #E9EAEB;
+    margin-top: 27px;
+    margin-bottom: 20px;
+}
+
+h2{
+    margin-bottom: 7px;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    color: #818285;
+}
+
+.head-border img {
+    display: block;
+    width: 530px;
+    height: 13px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 527px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.left-main{
+    float: left; 
+}
+
+.right-main{
+    float: right;
+    padding-left: px; 
+}
+
+.textboxes input {
+    font-family: lato;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    width: 250px;
+    height: 35px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+}
+
+.textboxes img {
+    width: 95px;
+    float: right;
+    cursor: help;
+}
+
+.error {
+    margin-top: 40px;
+}
+
+.red-outline::-webkit-input-placeholder {
+   color: #DD3742;
+}
+
+.red-outline:-moz-placeholder { / Firefox 18- /
+   color: #DD3742;  
+}
+
+.red-outline::-moz-placeholder {  / Firefox 19+ /
+   color: #DD3742;  
+}
+
+.red-outline:-ms-input-placeholder {  
+   color: #DD3742;  
+}
+
+.red-outline {
+     color: #DD3742 !important;
+     border: 1px solid #DD3742 !important;
+}
+
+.blue-outline{
+    border: 1px solid #74CAC2 !important;
+}
+
+input[type="search"]
+{
+    background:url("../img/search.jpg") no-repeat right 0px center;
+    background-size: 33px 33px;
+    height: 31px;
+    background-color:#FFFFFF;
+    cursor:pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:active {
+    outline: none;
+}
+
+.drop-down {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    height: 35px;
+    width: 100%;
+    margin:2px 0 15px 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #818285;
+    border-color: #cccccc; 
+    padding-left: 15px;
+    border-radius: 0;
+    float: right;
+    cursor: pointer;
+    background:url("../img/drop-down-arrow.png") no-repeat right 0px center;
+    background-size: 33px 33px;
+    background-color:#FFFFFF;
+    cursor:pointer;
+}
+
+select:focus {
+    outline: none;
+}
+
+select:active {
+    outline: none;
+}
+
+.drop-down-wrapper img {
+    width: 36px;
+    margin-top: 0px;
+    margin-right: 3px;
+    border: 1px solid #cccccc;
+}
+
+.btn {
+    border-radius: 12px;
+    padding: 12px 19px;
+    font-size: 14px;
+    border: none;
+    color: white;
+}
+
+.btn-large {
+    border-radius: 12px;
+    padding: 14px 29px;
+    margin-left: 20px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    outline: none;
+}
+
+.peach-button button {
+    background-color: #F07468;
+    margin-top: 5px;
+}
+
+.peach-button button:hover {
+    background-color: #ED3453;
+}
+
+.yellow-button button {
+    background-color: #FCB432;
+    margin-top: 10px;
+}
+
+.yellow-button button:hover {
+    background-color: #F36D27;
+}
+
+.green-button button {
+    background-color: #74CAC2;
+    margin-top: 10px;
+}
+.green-button button:hover {
+    background-color: #2EBBA8;
+}
+
+.radio {
+    display: inline-block;
+    margin: 15px 15px 10px 0;
+    text-align: left;
+    font-size: 16px;
+    color: #818285;
+}
+
+.radio h3 {
+    float: left;
+    font-weight: 300;
+    padding: 0 11px;
+}
+
+.radio input {
+    margin-left: 35px;
+    color: #74CAC2;
+}
+
+.checkbox {
+    display: inline-block;
+     margin: 10px 15px 10px 0;
+    font-size: 16px;
+    color: #818285;
+}
+
+.checkbox h3 {
+    float: left;
+    font-weight: 300;
+    padding: 0 11px;
+}
+
+.checkbox input {
+    margin-left: 25px;      
+}
+
+input[type="range"]{
+  -webkit-appearance:none;
+  height: 6px;
+  background: #74CAC2;
+  background-size: 150px 10px;
+  border-radius: 3px;
+  border: 2px solid #ffffff;
+}
+
+.range input {
+    
+    width: 213px;
+    margin-bottom: 10px;
+    float: right;
+    padding-left: 5px;
+}
+
+.rating {
+    color: #FCB333;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 10px;
+    float: left;
+    margin-top: 3px;
+}
+
+.rating > span:hover {
+    color: #CDCCCC;
+    cursor: pointer;
+   
+}
+.number {
+    float: right;
+}
+
+.number input {
+    font-weight: 300;
+    text-align: center;
+    width: 50px;
+    margin-bottom: 10px; 
+    color: #818285;
+    border: 1px solid #cccccc;
+}
+
+.comment-box {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.comments {
+
+    -webkit-appearance: none;
+    font-weight: 300;
+    font-size: 14px;
+    color: #818285;
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 200px;
+    height: 63px;
+    border-color: #cccccc;
+    margin-left: 0px;   
+}
+
+textarea:focus {
+    outline: none;
+}
+
+textarea:active {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
